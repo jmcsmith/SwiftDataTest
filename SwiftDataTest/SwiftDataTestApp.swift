@@ -12,7 +12,27 @@ import SwiftData
 struct SwiftDataTestApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Set.self,
+            Card.self,
+//            Token.self,
+            ForeignData.self,
+            Identifiers.self,
+            LeadershipSkills.self,
+            PurchaseUrls.self,
+            RelatedCards.self,
+            Ruling.self,
+            Translations.self,
+            CardType.self,
+            SuperType.self,
+            SubType.self,
+            Keyword.self,
+            Legalities.self,
+            Variation.self,
+            //deck
+            Deck.self,
+            DeckCard.self,
+            CardCollection.self,
+            CollectionCard.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
